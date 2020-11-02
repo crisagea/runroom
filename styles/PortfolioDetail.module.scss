@@ -1,13 +1,10 @@
 @import "./variables.scss";
 
-.billboard {
-  min-height: 80vh;
-}
-
 .highlight {
   color: $neutro;
   font-size: 1.3125rem;
   line-height: 1.5;
+  display: none;
 }
 
 .gallery {
@@ -48,6 +45,11 @@
 }
 
 @media (min-width: 48em) { 
+
+  .highlight {
+    display: block;
+  }
+
   .navigation {
     display: flex;
     flex-direction: row-reverse;

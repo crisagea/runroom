@@ -1,22 +1,28 @@
 @import '../../styles/variables';
 
 .billboard {
-  position: relative;
-  margin-bottom: 8.125rem;
-  height: 43.75rem;
-  overflow: hidden;
-
-  img {
-      max-width: 100%;
-      position: absolute;
-  }
+  margin-bottom: 3.125rem;
 }
 
-.intro{
-  position: absolute;
-  bottom: 0;
-  background: $light;
-  width: calc(50% - 2.5rem);
-  margin-left: 2.5rem;
-  padding: 2.25rem 2.875rem;
+@media (min-width: 48em) { 
+  .billboard {
+    position: relative;
+    margin-bottom: 8.125rem;
+    height: 43.75rem;
+    overflow: hidden;
+  
+    img {
+        max-width: 100%;
+        position: absolute;
+    }
+  }
+  
+  .intro{
+    position: absolute;
+    bottom: 0;
+    background: $light;
+    width: calc(50% - 2.5rem);
+    margin-left: 2.5rem;
+    padding: 2.25rem 2.875rem;
+  }
 }
