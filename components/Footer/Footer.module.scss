@@ -52,14 +52,18 @@
 @media (min-width: 48em) {
     .footer {
         padding: 4.18rem 3.25rem 2.82rem;
-        display: grid;
-        grid-template-columns: auto 1fr auto;
+        display: flex;
+        flex-direction: row;
     }
 
     .navList {
         display: flex;
     }
 
+    .menu {
+        flex: 1;
+    }
+    
     .rrss {
         margin-top: 0;
     }

@@ -1,10 +1,13 @@
-.grid {}
+@media (min-width: 48em) {
+    .grid {
+        display: flex;
+        flex-direction: row;
+    }
 
-.column {
-    flex-basis: 0;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+    .column {
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
 }
-
-

@@ -14,7 +14,7 @@ const Footer = () => {
           <Logo className={styles.logo} />
         </a>
       </Link>
-      <nav>
+      <nav className={styles.menu}>
         <ul className={styles.navList}>
           <li>
             <Link href="/">
