@@ -79,7 +79,7 @@ const Portfolio = () => {
             </li>
           </ul>
         </section>
-        <nav className={styles.navigation}>
+        <nav className={`${styles.navigation} container`}>
           <a className={`${styles.link} ${styles.next}`} href="#">
             XIV
             <span className={styles.label}>Siguiente proyecto</span>
