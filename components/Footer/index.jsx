@@ -34,15 +34,15 @@ const Footer = () => {
         </ul>
       </nav>
       <nav>
-        <ul>
+        <ul className={styles.navList}>
           <li>
-            <Behance />
+            <Behance  className={styles.link}/>
           </li>
           <li>
-            <Twitter />
+            <Twitter  className={styles.link}/>
           </li>
           <li>
-            <Linkedin />
+            <Linkedin  className={styles.link}/>
           </li>
         </ul>
       </nav>
