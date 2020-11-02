@@ -3,9 +3,19 @@ import Link from 'next/link';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Billboard from '../components/Billboard';
 import ContactMe from '../components/ContactMe';
 import ContactModal from '../components/ContactModal';
 import styles from '../styles/Home.module.scss';
+
+const billboard = {
+  image: '/main-image.jpg',
+  title: `Hola, soy Jonas Kahnwald, diseñador de interiores`,
+  description: "",
+  buttonLink: '#about',
+  buttonClass: '',
+  buttonText: 'Sobre mí'
+};
 
 const Home = () => {
   return (
@@ -17,15 +27,7 @@ const Home = () => {
 
       <Header />
       <main className="container">
-        <section className={styles.billboard}>
-          <img src="/main-image.jpg" />
-          <div className={styles.intro}>
-            <h1>Hola, soy Jonas Kahnwald, diseñador de interiores</h1>
-            <a className="button" href="#about">
-              Sobre mí
-            </a>
-          </div>
-        </section>
+        <Billboard billboard={billboard} />
         <section id="about">
           <div className="grid">
             <div className="column">

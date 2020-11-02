@@ -1,11 +1,23 @@
 import Head from 'next/head';
-import Link from 'next/link';
 
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import Billboard from '../../components/Billboard';
 import ContactMe from '../../components/ContactMe';
 import ContactModal from '../../components/ContactModal';
 import styles from '../../styles/Portfolio.module.scss';
+
+const billboard = {
+  image: "/sanderson.jpg",
+  title: "Sanderson",
+  description: `Mental games, optical illusions, to eccentricities, to dreams, to successful
+  impossibilities. When you arrive in the hotel, you do not really understand what is
+  going on. Nothing is really in its place, nothing really has its true volume, its true
+  size.`,
+  buttonLink: "/portfolio/sanderson",
+  buttonClass: "button--hollow",
+  buttonText: "Ver proyecto"
+};
 
 const Portfolio = () => {
   return (
@@ -17,21 +29,7 @@ const Portfolio = () => {
 
       <Header />
       <main className="container">
-        <section className={styles.billboard}>
-          <img src="/sanderson.jpg" />
-          <div className={styles.intro}>
-            <h2>Sanderson</h2>
-            <p>
-              Mental games, optical illusions, to eccentricities, to dreams, to successful
-              impossibilities. When you arrive in the hotel, you do not really understand what is
-              going on. Nothing is really in its place, nothing really has its true volume, its true
-              size.
-            </p>
-            <Link href="/portfolio/sanderson">
-              <a className="button button--hollow">Ver proyecto</a>
-            </Link>
-          </div>
-        </section>
+        <Billboard billboard={billboard} />
         <section>
           <div className={`${styles.work} grid`}>
             <div className="column">
